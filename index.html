@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxContainer">
+            <h1 class="title">will you survive today?</h1>
+            <div class="monsterContainer">
+                <h3 id="monster"></h3>
+                <progress id="health"></progress>
+                <div id="monsterPicture" >
+                    <img class = "initialImg" id = "questionMark" src = "questionMark.gif" >
+                </div>
+            </div>
+            <div class="addContainer">
+                <h3 class="taskDifficulty">task difficulty:</h3>
+                <label>
+                    <input type="radio" class = "noSelect" name = "difficulty" id ="difficultyEasy"> easy
+                </label>
+                <label>
+                    <input type="radio" class = "noSelect" name = "difficulty" id ="difficultyMed"> med
+                </label>
+                <label>
+                    <input type="radio" class = "noSelect" name = "difficulty"  id ="difficultyHard"> hard
+                </label>
+                <input type="text" id="inputField" class = "noSelect" required>
+                <button id="add">+</button>
+            </div>
+            <div id="toDoContainer">
+            </div>
+        </div>
+    </div>
+    <script src = "code.js"></script>
+</body>
+</html>
