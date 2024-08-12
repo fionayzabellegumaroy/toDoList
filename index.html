@@ -7,9 +7,12 @@
     <title>To Do List</title>
 </head>
 <body>
-    <div class="container">
-        <div class="boxContainer">
-            <h1 class="title">will you survive today?</h1>
+    <div class="container" id = "container">
+        <div class="boxContainer" id = "boxContainer">
+
+            <button id = "instructionsReopenButton">instructions</button>
+
+            <h1 class="title">To-Do List</h1>
             <div class="monsterContainer">
                 <h3 id="monster"></h3>
                 <progress id="health"></progress>
@@ -23,7 +26,7 @@
                     <input type="radio" class = "noSelect" name = "difficulty" id ="difficultyEasy"> easy
                 </label>
                 <label>
-                    <input type="radio" class = "noSelect" name = "difficulty" id ="difficultyMed"> med
+                    <input type="radio" class = "noSelect" name = "difficulty" id ="difficultyMed"> medium
                 </label>
                 <label>
                     <input type="radio" class = "noSelect" name = "difficulty"  id ="difficultyHard"> hard
@@ -33,6 +36,24 @@
             </div>
             <div id="toDoContainer">
             </div>
+        </div>
+        <div class="messageContainer" id = "errorRateContainer" style = "display: none;">
+            <button class = "xButton" id="rateXButton" >x</button>
+            <p class="error" id = "error">Please rate task difficulty before submitting.</p>
+        </div>
+        <div class="messageContainer" id="errorInputContainer" style = "display: none;">
+            <button class = "xButton" id="inputXButton" >x</button>
+            <p class="error" id = "error">Please input a task.</p>
+        </div>
+        <div class="messageContainer" id = "instructionsContainer">
+            <button class = "xButton" id="instructionsButton">x</button>
+            <span id="instructions">
+                <p id="write">In order to input a task, write the task in the input field and rate its difficulty accordingly.</p>
+                <p id="clickOnce">By clicking on a task once, it will put a line through it.</p>
+                <p id="clickAgain">By clicking it again after a slight pause, it will undo the line.</p> 
+                <p id="remove">To remove the task completely after finishing it, double click on the finished task.</p> 
+                <p id="damage">Depending on the difficulty, the task will damage the monster.</p>
+            </span>
         </div>
     </div>
     <script src = "code.js"></script>
